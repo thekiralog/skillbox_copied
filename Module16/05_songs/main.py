@@ -10,4 +10,14 @@ violator_songs = [
     ['Clean', 5.83]
 ]
 
-# TODO здесь писать код
+user_quantity = int(input('Сколько песен выбрать? '))
+i = 1
+ttl = 0
+while i != user_quantity + 1:
+    cheat_line = str('Название ') + str(i) + str(' песни: ')
+    user_song = input(cheat_line)
+    for key, value in violator_songs:
+        if key == user_song:
+            ttl += value
+    i += 1
+print('\n Общее время звучания песен:', round(ttl, 3), "минут")
