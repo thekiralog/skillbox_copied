@@ -1,5 +1,3 @@
 import random
-charterer_task = [[[random.randint(0, 9) for lower_list in range(5)]
-                  for middle_list in range(3)]
-                  for top_list in range(1)]
+charterer_task = [[value, value + 4, value + 8] for value in range(1, 5)]
 print(charterer_task)
