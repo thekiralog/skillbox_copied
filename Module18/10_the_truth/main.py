@@ -41,4 +41,3 @@ for index, word in enumerate(prefixed_words):
     res += ' '
 print(prefixed_words)
 print(res)
-
