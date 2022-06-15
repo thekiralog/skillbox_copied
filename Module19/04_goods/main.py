@@ -24,4 +24,10 @@ store = {
     ],
 }
 
-# TODO здесь писать код
+for good, art in goods.items():
+    ttl_quantity = int()
+    ttl_cost = int()
+    for group in store[art]:
+        ttl_quantity += group['quantity']
+        ttl_cost += group['quantity'] * group['price']
+    print(f'{good} — {ttl_quantity} шт. Стоимость {ttl_cost} руб.')

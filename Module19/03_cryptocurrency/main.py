@@ -1,3 +1,17 @@
+def flatter(dom_base, keys: list, values: list):
+    if isinstance(dom_base, dict):
+        for key, value in dom_base.items():
+            keys.append(key)
+            if isinstance(value, dict):
+                flatter(value, keys, values)
+            elif isinstance(value, list):
+                for item in value:
+                    flatter(item, keys, values)
+            else:
+                values.append(value)
+    return
+
+
 data = {
     "address": "0x544444444444",
     "ETH": {
@@ -44,5 +58,13 @@ data = {
     ]
 }
 
-
-# TODO здесь писать код
+key_list = list()
+value_list = list()
+flatter(data, key_list, value_list)
+print(key_list)
+print(value_list)
+data['ETH']['total_diff'] = 100
+data['tokens'][0]['fst_token_info']['name'] = 'doge'
+data['tokens'][0].pop('total_out')
+data['ETH']['total_out'] = data['tokens'][1].pop('total_out')
+data['tokens'][1]['sec_token_info']['total_price'] = data['tokens'][1]['sec_token_info'].pop('price')
