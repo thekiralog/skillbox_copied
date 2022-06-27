@@ -1,3 +1,12 @@
+def activities_plus_surname_length(database):
+    hobbies = []
+    surnames_row = str()
+    for i_value in database.values():
+        hobbies += i_value['interests']
+        surnames_row += i_value['surname']
+    return hobbies, len(surnames_row)
+
+
 students = {
     1: {
         'name': 'Bob',
@@ -20,25 +29,10 @@ students = {
 }
 
 
-def f(dict):
-    lst = []
-    string = ''
-    for i in dict:
-        lst += (dict[i]['interests'])
-        string += dict[i]['surname']
-    cnt = 0
-    for s in string:
-        cnt += 1
-    return lst, cnt
+pairs = list()
+for identify, student in students.items():
+    pairs.append((identify, student['age']))
 
-
-pairs = []
-for i in students:
-    pairs += (i, students[i]['age'])
-
-
-my_lst = f(students)[0]
-l = f(students)[1]
-print(my_lst, l)
-
-# TODO исправить код
+activities, length_surnames = activities_plus_surname_length(students)
+print(activities, length_surnames)
+print(pairs)
