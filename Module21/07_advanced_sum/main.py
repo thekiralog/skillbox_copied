@@ -1,1 +1,4 @@
-# TODO здесь писать код
+def advanced_sum(*args):
+    pass
+
+
