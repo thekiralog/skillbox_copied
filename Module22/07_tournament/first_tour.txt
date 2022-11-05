@@ -1,0 +1,7 @@
+80
+Ivanov Serg 80
+Sergeev Petr 92
+Petrov Vasiliy 98
+Vasiliev Maxim 78
+Aleniev Nikita 92
+Makseev Artyom 72
