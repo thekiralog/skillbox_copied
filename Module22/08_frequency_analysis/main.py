@@ -1,6 +1,3 @@
-import string
-
-
 def freq_sorting(data):
     sum_chars = sum(data.values())
     presorted_data = dict()
@@ -23,7 +20,7 @@ analysis = open('analysis.txt', 'w', encoding='utf-8')
 text_data = dict()
 for i_string in text:
     for i_char in i_string.lower():
-        if i_char in string.ascii_lowercase:
+        if i_char.isalnum() and i_char != ' ':
             if i_char in text_data.keys():
                 text_data[i_char] += 1
             else:
