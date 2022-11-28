@@ -31,3 +31,5 @@ for i_res in sorted_data:
     analysis.write(i_res[0] + ": " + str(i_res[1]) + '\n')
 analysis.close()
 text.close()
+
+# зачтено

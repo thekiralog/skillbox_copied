@@ -16,7 +16,7 @@ for i_letter in string.ascii_uppercase:
     if os.path.isdir(i_disk):
         local_disks.append(i_disk)
 print('Введите номер диска на котором хотите сохранить файл:', str(local_disks)[1:-1])
-user_disk = local_disks[int(input())-1]
+user_disk = local_disks[int(input()) - 1]
 user_path = input('Куда хотите сохранить документ? Введите последовательность папок (через пробел):').split()
 file_path = str()
 for i_folder in user_path:
@@ -36,3 +36,5 @@ else:
     print('Файл успешно сохранен!')
     file.write(user_string)
 file.close()
+
+# зачтено

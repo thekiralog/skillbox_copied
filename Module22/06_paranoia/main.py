@@ -1,6 +1,3 @@
-import os
-
-
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
             'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
@@ -27,3 +24,4 @@ for i_string in origin_text:
 origin_text.close()
 cipher_text.close()
 
+# зачтено

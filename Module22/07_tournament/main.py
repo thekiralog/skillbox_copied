@@ -15,7 +15,6 @@ for i_string in first_tour:
                 form = i_string[1][0] + '. ' + i_string[0]
                 competition_members[form] = int(i_string[2])
 
-
 second_tour.write(str(len(competition_members.items())) + '\n')
 player_place = 1
 for i_player in sorted(competition_members.items())[::-1]:
@@ -25,3 +24,5 @@ for i_player in sorted(competition_members.items())[::-1]:
 
 first_tour.close()
 second_tour.close()
+
+# зачтено

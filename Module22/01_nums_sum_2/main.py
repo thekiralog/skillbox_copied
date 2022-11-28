@@ -1,5 +1,3 @@
-import os
-
 file = open('numbers.txt', 'r', encoding='utf-8')
 answer = open('answer.txt', 'w', encoding='utf-8')
 ans = 0
@@ -10,3 +8,5 @@ print(ans)
 answer.write(str(ans))
 file.close()
 answer.close()
+
+# зачтено

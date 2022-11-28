@@ -1,5 +1,5 @@
-import zipfile
 import os
+import zipfile
 
 
 def freq_sorting(data):
@@ -41,3 +41,5 @@ analysis.close()
 text.close()
 vim_zip.close()
 os.remove('voyna-i-mir.txt')
+
+# зачтено

@@ -12,7 +12,7 @@ def catalog_content(current_path, content=[]):
     return content
 
 
-user_path = input('Введите путь: ')
+user_path = "../../Module14"
 common_file_size = 0
 sub_folders_quantity = 0
 files_quantity = 0
@@ -35,3 +35,5 @@ print(
         files_quantity=files_quantity
     )
 )
+
+# зачтено
